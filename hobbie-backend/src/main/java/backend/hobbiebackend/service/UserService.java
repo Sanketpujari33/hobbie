@@ -37,10 +37,12 @@ public interface UserService {
     AppClient findAppClientById(Long clientId);
 
     void findAndRemoveHobbyFromClientsRecords(Hobby hobby);
-
+    
     boolean businessExists(String businessName);
 
     AppClient findAppClientByUsername(String username);
 
     BusinessOwner findBusinessByUsername(String username);
 }
+
+

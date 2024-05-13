@@ -15,6 +15,7 @@ public class UserEntity extends BaseEntity implements Serializable {
     private List<UserRoleEntity> roles = new ArrayList<>();
     private String password;
 
+
     public UserEntity(String username, String email, List<UserRoleEntity> roles, String password) {
         this.username = username;
         this.email = email;
@@ -60,5 +61,6 @@ public class UserEntity extends BaseEntity implements Serializable {
     public void setRoles(List<UserRoleEntity> roles) {
         this.roles = roles;
     }
+
 
 }

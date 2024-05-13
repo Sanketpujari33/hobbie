@@ -23,8 +23,7 @@ public class AppClient extends UserEntity implements Serializable {
     public AppClient() {
     }
 
-    public AppClient(String username, String email, List<UserRoleEntity> roles, String password, String fullName,
-            GenderEnum gender) {
+    public AppClient(String username, String email, List<UserRoleEntity> roles, String password, String fullName, GenderEnum gender) {
         super(username, email, roles, password);
         this.fullName = fullName;
         this.gender = gender;

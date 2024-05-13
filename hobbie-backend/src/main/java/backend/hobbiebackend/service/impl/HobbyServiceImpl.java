@@ -28,8 +28,7 @@ public class HobbyServiceImpl implements HobbyService {
     private final Cloudinary cloudinary;
 
     @Autowired
-    public HobbyServiceImpl(HobbyRepository hobbyRepository, CategoryService categoryService, UserService userService,
-            LocationService locationService, Cloudinary cloudinary) {
+    public HobbyServiceImpl(HobbyRepository hobbyRepository, CategoryService categoryService, UserService userService, LocationService locationService, Cloudinary cloudinary) {
         this.hobbyRepository = hobbyRepository;
         this.categoryService = categoryService;
         this.userService = userService;
@@ -80,6 +79,7 @@ public class HobbyServiceImpl implements HobbyService {
         cloudinary.api().deleteResources(Arrays.asList(profileImgId, galleryImgId1, galleryImgId2, galleryImgId3),
                 Map.of("invalidate", true));
     }
+
 
     @Override
     public Set<Hobby> findHobbyMatches(String username) {
@@ -179,3 +179,4 @@ public class HobbyServiceImpl implements HobbyService {
     }
 
 }
+
