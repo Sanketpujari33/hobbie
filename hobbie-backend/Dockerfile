@@ -1,5 +1,3 @@
-FROM openjdk:11
-
 # Use the official OpenJDK 11 base image
 FROM openjdk:11
 
